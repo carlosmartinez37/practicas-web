@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Hojas de estilo en cascada documento</title>
+    <style>
+        /* selectores de etiqueta */
+        body{
+            font-family: sans-serif;
+        }
+        p {
+            line-height: 30px;
+        }
+        
+        /* selectores de tipo id */
+        /* importante: en html se recomienda 
+        utilizar solo un ID a la vez, sin repetir*/
+        #subtitulo{
+            color:fuchsia;
+        }
+        #maintitle {
+            /* color: rgb(0,200,200); */
+            COLOR: #ff7666;
+        }
+        
+        /* selectores de tipo clase */
+        .articulo {
+            font-family: Courier;
+            margin-bottom: 40px
+        }
+        .articulo>header {
+            font-weight: bold;
+            font-size: 1.5em;
+            /* pt:points, px:pixeles, %:percent, em:tamaño que tiene por default la maquina de acuerdo a tu configuracion
+              */
+        }
+        .contenido {
+             line-height: 1em;
+             text-align: justify
+            }
+        .articulo p {
+            line-height: 1em;
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="maintitle">CSS - Hojas de estilo en cascada documento</h1>
+    <p>fsefe fesfsef sefesvfdgr, tewrgetew
+    rtwe twtegewg ewgkegwg,gewte gwg,wgewgegwgr gewgewgre.wer
+    grewgegr eggewgegre gewgwkgeogekogke gewgoegkerogoerkge gerwgkepwgkergmoreg, gregre
+    kregkekgregmre gregerg,er gerger,gergergf.regerggregergm rgegewgo gerbh jjjjjjjjj.</p>
+    <h2 id="subtitulo">Ejemplo de ID</h2>
+    <section id="articulos">
+        <article class="articulo">
+            <header class="titulo">Titulo del articulo 1</header>
+            <p class="contenido">efsef fsegferg ergwerigjueriogn erergioerjeriogerger.ger greregkierhng er,
+            rfgergergregjieriger erjheruig ereruhkheruk weghfke fweugtfuiqwekfgfyugjkl erbyureferhgfilf eruiyf rhef eerygfile uygfterf-fry8fer ytfgweb ,erugfevfeyrgtw hyugfrgyfgtb -fu7 ,wlyrewf vebn.yuvfen ehyrgfe</p>
+            <button class="readmore">Leer más</button>
+        </article>
+        <article class="articulo">
+            <header>Titulo del articulo 2</header>
+            <p class="contenido">efsef fsegferg ergwerigjueriogn erergioerjeriogerger.ger greregkierhng er,
+            rfgergergregjieriger erjheruig ereruhkheruk weghfke fweugtfuiqwekfgfyugjkl erbyureferhgfilf eruiyf rhef eerygfile uygfterf-fry8fer ytfgweb ,erugfevfeyrgtw hyugfrgyfgtb -fu7 ,wlyrewf vebn.yuvfen ehyrgfe</p>
+            <button>Leer más</button>
+        </article>
+        <article class="articulo">
+            <header>Titulo del articulo 3</header>
+            <p>efsef fsegferg ergwerigjueriogn erergioerjeriogerger.ger greregkierhng er,
+            rfgergergregjieriger erjheruig ereruhkheruk weghfke fweugtfuiqwekfgfyugjkl erbyureferhgfilf eruiyf rhef eerygfile uygfterf-fry8fer ytfgweb ,erugfevfeyrgtw hyugfrgyfgtb -fu7 ,wlyrewf vebn.yuvfen ehyrgfe</p>
+            <button>Leer más</button>
+        </article>
+    </section>
+</body>
+</html>
