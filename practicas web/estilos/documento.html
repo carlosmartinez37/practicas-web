@@ -1,0 +1,67 @@
+<!DOCTYPEhtml>
+<html lang ="es">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS - Hojas de estilo en cascada documento</title>
+    <style>
+        /* REGLAS TIPO ETIQUETA */
+        body{
+            font-family: sans-serif;
+        }
+        p{
+            line-height: 30px;
+        }
+        
+        /* REGLAS TIPO ID */
+        /* importante: en HTML se recomienda solo utilizar un ID a la vez, sin repetir*/
+        #subtitulo{
+            color: dodgerblue;
+        }
+        #maintitle{
+            /*color: rgb(0.200.200);*/
+            color: #ff0666;
+        }
+        
+        /* REGLAS TIPO CLASE */
+        .articulo{
+            font-family: sans-serif;
+            margin-bottom: 40px;
+        }
+        .articulo>header{
+            font-weight: bold;
+            font-size: 1.5em;
+            /* pt: points, px: pixels, em:?*/
+        }
+        .contenido{
+            line-height: 1em;
+            text-align: justify;
+        }
+        .articulo p{
+            line-height: 1em;
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="maintitle">CSS - Hojas de estilo en cascada documento</h1>
+    <p>lorem kadioasdasdiasjdijasdiosd djjasiodjioasjdiosajdioasiod asdioasjdiojasiodjasiodhuioasdiosuidhasd asidasidhioashdiosajdiosjaiodhaskod asdihasiodasiojdioashduioasjdioasid asidhasidioashdioasdhioasdioasidhsad saidsaiodhioashdioasdiosahsdioshodih.</p>
+    <h2 id="subtitulo">Ejemplo de ID</h2>
+    <section id="articulos">
+        <article class="articulo">
+            <header class="titulo">Titulo del articulo </header>
+            <p class="contenido">Lorem dhsfkjhsdifhjkdhf udhuifhdjfhuisdf uifhijhfuihfuihduifhisdf ifhsifosfopskdfiojsdif dfjdnhfuiduiofiosdjfiosdf sduifhsdifhiosdjfiosdfidsiof duifjsdiofjiodsjfiosdjfiodjsiof dfiodiofjiodjfiodjfiodjfo diofjiodjfiodjf.</p>
+            <button class="readmore">Leer más</button>
+        </article>
+        <article class="articulo">
+            <header>Titulo del articulo 2</header>
+            <p>Lorem dhsfkjhsdifhjkdhf udhuifhdjfhuisdf uifhijhfuihfuihduifhisdf ifhsifosfopskdfiojsdif dfjdnhfuiduiofiosdjfiosdf sduifhsdifhiosdjfiosdfidsiof duifjsdiofjiodsjfiosdjfiodjsiof dfiodiofjiodjfiodjfiodjfo diofjiodjfiodjf.</p>
+            <button>Leer más</button>
+        </article>
+        <article class="articulo">
+            <header>Titulo del articulo 3</header>
+            <p>Lorem dhsfkjhsdifhjkdhf udhuifhdjfhuisdf uifhijhfuihfuihduifhisdf ifhsifosfopskdfiojsdif dfjdnhfuiduiofiosdjfiosdf sduifhsdifhiosdjfiosdfidsiof duifjsdiofjiodsjfiosdjfiodjsiof dfiodiofjiodjfiodjfiodjfo diofjiodjfiodjf.</p>
+            <button>Leer más</button>
+        </article>
+    </section>
+</body>
+</html>

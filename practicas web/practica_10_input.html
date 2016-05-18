@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Input en HTML</title>
+</head>
+<body>   
+    <h1>Input en HTML</h1>
+    <form action="#" method="get" name="frmInicio" id="frmInicio">
+        <label for="txt Nombre">Nombre:</label>
+        <input type="text" name="txtNombre" id="txtNombre" required="required">
+        <br><br>
+        <label for="txt Apellido">Apellido:</label>
+        <input type="text" name="txtApellido" id="txtApellido" required="required">
+        <br>
+        <label for="check1">
+            <input type="checkbox" name="check1" 
+            id="check1" value="op1">Opcion 1
+        </label>
+        <input type="checkbox" name="check2" 
+        id="check2">Opcion 2
+        <input type="checkbox" name="check3" 
+        id="check3">Opcion 3
+        <br>
+        <label for="masculino">
+            <input type="radio" name="masculino" 
+            id="masculino" value="M">
+            Masculino
+        </label>
+        <label for="femenino">
+            <input type="radio" name="femenino" 
+            id="femenino" value="F">
+            Femenino
+        </label>
+        <br>
+        <input type="date" name="fecha" id="fecha">
+        <br>
+        <input type="datetime-local" name="fechahora" id="fechahora">
+        <input type="hidden" name="oculta" id="loquesea">
+        <br>
+        <input type="password" name="pwd" id="pwd">Contraseña
+        <br>
+        <input type="email" name="correo" id="correo">Correo
+        <br>
+        <input type="number" name="numero" id="numero">Numero
+        <br>
+        <input type="reset" value="limpiar">
+        <input type="submit" value="Enviar formulario">
+        <br>
+        <input type="file" name="fila" id="fila">
+        <br>
+        <input type="color" name="color" id="color">
+        <br>
+        <input type="tel" name="telefono" id="telefono">telefono
+        <br>
+        <input type="url" name="direccion" id="direccion">Url
+    </form>
+</body>
+</html>
